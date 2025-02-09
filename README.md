@@ -54,7 +54,17 @@ The Sui Portfolio Analysis Agent operates by integrating with the Sui blockchain
      endLine: 113
      ```
 
-4. **Data Processing and Analysis**:
+4. **AI-Powered Chat API**:
+
+   - The application uses OpenRouter.ai to integrate AI capabilities into the chat API.
+   - It utilizes the `meta-llama/llama-3.3-70b-instruct:free` AI model to provide advanced analysis and insights.
+   - The relevant code for this integration is:
+     ```typescript:src/app/api/chat/route.ts
+     startLine: 138
+     endLine: 185
+     ```
+
+5. **Data Processing and Analysis**:
    - The application processes the fetched data to provide insights into the user's portfolio.
    - It calculates metrics such as total balance, market value changes, and more.
 
