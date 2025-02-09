@@ -35,17 +35,26 @@ The Sui Portfolio Analysis Agent operates by integrating with the Sui blockchain
      endLine: 15
      ```
 
-2. **Fetching Real-Time Market Data**:
+2. **Account Management and Connection**:
+
+   - The application uses the `@mysten/dapp-kit` library to manage user accounts and provide a connect button for wallet integration.
+   - This is implemented in the client-side component:
+     ```typescript:src/components/chat.tsx
+     startLine: 13
+     endLine: 14
+     ```
+
+3. **Fetching Real-Time Market Data**:
 
    - The application fetches real-time market data from the CoinGecko API.
    - It retrieves information such as current prices, 24-hour price changes, and market capitalization for various cryptocurrencies.
    - The function responsible for fetching this data is:
-     ```typescript:src/app/api/chat/route.ts
-     startLine: 1
-     endLine: 20
+     ```typescript:src/components/chat.tsx
+     startLine: 96
+     endLine: 113
      ```
 
-3. **Data Processing and Analysis**:
+4. **Data Processing and Analysis**:
    - The application processes the fetched data to provide insights into the user's portfolio.
    - It calculates metrics such as total balance, market value changes, and more.
 
